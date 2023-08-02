@@ -15,12 +15,12 @@
             $token = JWT::decode($jwt_token, new Key($sec_key, 'HS256'));
         } catch (Exception $e) {
             // http_response_code(401);
-            echo json_encode(['message' => 'Invalid JWT token']);
+            echo json_encode(['message' => 'Invalid JWT token', 'code' => 401]);
             exit();
         }
     } else {
         // http_response_code(401);
-        echo json_encode(['message' => 'Invalid JWT token']);
+        echo json_encode(['message' => 'Invalid JWT token', 'code' => 401]);
         exit();
     }
 

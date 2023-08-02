@@ -34,7 +34,8 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
     if (
         // result?.error?.status === "PARSING_ERROR" &&
         // result?.error?.originalStatus === 403
-        result?.data?.message === "Invalid JWT token"
+        result?.data?.message === "Invalid JWT token" &&
+        result?.data?.code === 401
     ) {
         if (!mutex.isLocked()) {
             const release = await mutex.acquire();
