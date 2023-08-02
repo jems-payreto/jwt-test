@@ -1,0 +1,20 @@
+{
+    "name": "patrick.tria/jwt-test",
+    "autoload": {
+        "psr-4": {
+            "PatrickTria\\JwtTest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patrick Tria",
+            "email": "patrick.tria@payreto.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^6.8",
+        "dompdf/dompdf": "^2.0",
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

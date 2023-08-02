@@ -13,7 +13,7 @@ const Login = () => {
         e.preventDefault();
 
         console.log("submit");
-        await login({ name: "James Santos", email: "james.santos@payreto.com" })
+        await login({ email: "james.santos@payreto.com", password : "test1234" })
             .unwrap()
             .then((res) => {
                 console.log("res", res);

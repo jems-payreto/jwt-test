@@ -32,8 +32,9 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
     console.log("result", result);
 
     if (
-        result?.error?.status === "PARSING_ERROR" &&
-        result?.error?.originalStatus === 403
+        // result?.error?.status === "PARSING_ERROR" &&
+        // result?.error?.originalStatus === 403
+        result?.data?.message === "Invalid JWT token"
     ) {
         if (!mutex.isLocked()) {
             const release = await mutex.acquire();
@@ -44,7 +45,7 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
 
                 // /refresh -> backend route
                 const refreshResult = await baseQuery(
-                    "/refresh",
+                    "/refresh.php",
                     api,
                     extraOptions
                 );

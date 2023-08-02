@@ -4,7 +4,7 @@ export const testApiSlice = api.injectEndpoints({
     endpoints: (builder) => ({
         test: builder.query({
             query: () => ({
-                url: "/test",
+                url: "/test.php",
             }),
         }),
     }),
