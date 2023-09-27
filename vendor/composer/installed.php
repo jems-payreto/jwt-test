@@ -3,7 +3,7 @@
         'name' => 'patrick.tria/jwt-test',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '9c66c9cdde7780ea13924e470345eae3d4110f71',
+        'reference' => '979bf9cffecf7aa2e6114b9282d8a395a58aa023',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -49,7 +49,7 @@
         'patrick.tria/jwt-test' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '9c66c9cdde7780ea13924e470345eae3d4110f71',
+            'reference' => '979bf9cffecf7aa2e6114b9282d8a395a58aa023',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

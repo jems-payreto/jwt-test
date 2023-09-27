@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    Header add Access-Control-Allow-Origin "http://localhost:5173"
+    Header add Access-Control-Allow-Credentials "true"
+    Header add Access-Control-Allow-Methods "GET,POST,OPTIONS,DELETE,PUT"
+    Header add Access-Control-Allow-Headers "Content-Type, authorization"
+
+    RewriteEngine on
+    RewriteBase /
+</IfModule>
